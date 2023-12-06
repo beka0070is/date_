@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: rgb(0, 0, 0);
+        /* background-image: url(https://free-png.ru/wp-content/uploads/2022/11/free-png.ru-292.png);
+        background-repeat: no-repeat;
+        background-position: center; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        height: 900px;
+        color: rgb(0, 255, 0);
+    }
+
+    .adaptiv{
+        position: relative;
+    }
+
+    .container {
+        position: absolute;
+        /* padding: 30px; */
+        width: 250px;
+        height: 250px;
+        border: 8px solid rgb(0, 255, 0);
+        border-radius: 100%;
+        /* box-shadow: 0 0 10px 5px; */
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-family: Marker Felt, fantasy, sans-serif;
+        font-size: 40px;
+        margin: 0 590px 0 0;
+    }
+
+    #time {
+        width: 100px;
+        text-align: center;
+        margin: 20px 0 20px 0;
+        padding: 5px 25px 5px 25px;
+        border: 3px solid rgb(0, 255, 0);
+        border-radius: 10px;
+        /* width: 300px;
+        height: 300px;
+        border: 3px solid white;
+        border-radius: 100%;
+        box-shadow: 0 0 10px 5px;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Courier, monospace, sans-serif;
+        font-size: 40px;
+        color: white; */
+    }
+
+    #time1 {
+        width: 40px;
+        text-align: center;
+        border: 3px solid rgb(0, 255, 0);
+        border-radius: 10px;
+        padding: 0 20px 0 20px;
+        font-size: 30px;
+    }
+
+    #time2 {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 3px solid rgb(0, 255, 0);
+        border-radius: 50px;
+        margin-right: 10px;
+        margin-top: 10px;
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    .date {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .date #time3 {
+        font-size: 25px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    @media(max-width: 500px) {
+        .adaptiv{
+            width: 250px;
+            height: 500px;
+        }
+    }
+</style>
+
+<body>
+    <div class="adaptiv">
+        <!-- <input type="checkbox" id="burger"> -->
+        <label for="burger"></label>
+        <div class="container">
+            <div class="date">
+                <div id="time2">дата</div>
+                <div id="time3"></div>
+            </div>
+            <div id="time">Время</div>
+            <div id="time1">Секунт</div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
